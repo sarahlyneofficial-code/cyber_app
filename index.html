@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Security Board</h1>
+    <p>Alerts today : <span id="total-count">0</span></p>
+  </header>
+
+  <section id="summary">
+    <div class="count high">High: <span id="high-count">0</span></div>
+    <div class="count medium">Medium: <span id="medium-count">0</span></div>
+    <div class="count low">Low: <span id="low-count">0</span></div>
+  </section>
+
+  <section id="filters">
+    <p>Filter by severity:</p>
+    <button class="filter-button high" data-level="high">High</button>
+    <button class="filter-button medium" data-level="medium">Medium</button>
+    <button class="filter-button low" data-level="low">Low</button>
+    <button class="filter-button all" data-level="all">All</button>
+  </section>
+
+  <section id="alerts"></section>
+  alertHtml += `
+  <a class="card ${list[i].severity}" href="details.html?id=${list[i].id}">
+    <span class="card-ip">${list[i].ip}</span>
+    <span>${list[i].attempts} failed logins</span>
+    <span class="card-level">${list[i].severity}</span>
+  </a>
+`;
+
+  <p id="hint">Click on an alert to view details</p>
+
+  <script src="script.js"></script>
+  <a href="index1.html">Aller au tableau de bord</a>
+</body>
+</html>

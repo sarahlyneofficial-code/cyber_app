@@ -1,0 +1,145 @@
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  color:#ff009d;
+  font-size: 25px;
+}
+
+#summary {
+  margin: 20px;
+  padding: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  font-size: 20px;
+}
+
+.high {
+  color: #cd1111;
+  font-size: 30px;
+}
+.medium {
+  color: #f9a704;
+  font-size: 30px;
+}
+.low {
+  color: #00b894;
+  font-size: 30px;
+}
+
+#filters {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter-button {
+  width: 120px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.filter-button:hover {
+  opacity: 0.8;
+}
+.filter-button.high {
+  background-color: #ff0000;
+  color: white;
+}
+.filter-button.medium {
+  background-color: #ffbf00;
+  color: white;
+}
+.filter-button.low {
+  background-color: #08eabd;
+  color: white;
+}
+.filter-button.all {
+  background-color: #bd02fc;
+  color: rgb(254, 255, 255);
+}
+
+p {
+  font-size: 30px;
+  color: #ff009d;
+}
+
+.card {
+  margin: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  font-size: 18px;
+}
+.card p {
+  color: inherit;
+  font-size: 30px;
+}
+.card.high {
+  border-color: #cd1111;
+  font-size: 30px;
+}
+.card.medium {
+  border-color: #f9a704;
+  font-size: 30px
+}
+.card.low {
+  border-color: #00b894;
+  font-size: 30px
+}
+
+#alerts {
+  margin: 20px;
+  padding: 20px;
+  min-height: 300px;
+  border: 1px dashed #444;
+}
+
+#hint {
+  margin: 20px;
+}
+#alerts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #1f0a0a;
+}
+
+.card-ip {
+  font-weight: bold;
+}
+
+.card-level {
+  text-transform: uppercase;
+}
